@@ -1,0 +1,2 @@
+INSERT INTO `dede_flash` VALUES('1','1','javascript:;','Banner1','','/uploads/flash/1501272235492249.jpg','1422369349','2');
+INSERT INTO `dede_flash` VALUES('2','2','javascript:;','Banner2','','/uploads/flash/1501272236357920.jpg','1422369395','2');

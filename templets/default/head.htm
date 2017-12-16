@@ -1,0 +1,56 @@
+<!-- 头部导航 -->
+<div class="header">
+<div class="main">
+<a href="{dede:global.cfg_basehost/}" class="logo">
+<img src="/dedemao/images/logo.png" class="pngFix" alt="{dede:global.cfg_webname/}" />
+</a>
+<div class="menu">
+<p></p>
+<ul class="pngFix">
+<li><a href="{dede:global.cfg_basehost/}">网站首页</a></li>
+
+{dede:channelartlist  typeid='top'  row='7'  currentstyle='cur'}
+<li><a href="{dede:field name='typeurl'/}"   class="{dede:field.currentstyle/}">{dede:field name='typename'/}</a>
+<div class="nav"> 
+{dede:channel type='son' noself='yes' }
+<a href="[field:typelink/]">[field:typename/]</a>
+{/dede:channel}
+</div>
+</li>
+{/dede:channelartlist}
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 头部Banner -->
+<div id="full-screen-slider">
+<ul id="slides">
+{dede:sql sql='select * from #@__flash where ischeck=2 order by sortrank asc limit 0,4'} 
+<li style="background:url('[field:pic/]') no-repeat center top"></li>
+{/dede:sql}
+</ul>
+</div>
+
+<!-- 公告，搜索 -->
+<div class="notice">
+<div class="main">
+<div class="noticetxt"> <b>公告：</b>
+<marquee scrollamount="2" scrolldelay="5" onMouseOut="this.start()" onMouseOver="this.stop()">
+{dede:global.cfg_gonggao/}        
+</marquee>
+</div>
+<div class="search">
+<form  name="formsearch" action="/plus/search.php">
+<input type="hidden" name="kwtype" value="0" />
+<input type="text" class="text" name="q" id="search-keyword" value="请输入搜索关键词" onfocus="this.value=&#39;&#39;" onblur="if(!value){value=defaultValue}" />
+
+<input type="submit" title="搜索" class="button" value=""/>
+</form>     
+
+</div>
+</div>
+</div>
+
+
+<!-- //header -->

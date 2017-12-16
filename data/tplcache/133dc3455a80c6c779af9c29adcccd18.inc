@@ -1,0 +1,1 @@
+<a href="[field:typeurl /]" title="查看详细内容"></a>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_guestbook` VALUES('3','无标题','0','1','0','织梦源码','329435595@qq.com','13966668888','329435595','','127.0.0.1','1400551968','1','dedemao.com织梦源码是好的源码网站！！<br />\r\ndedemao.com织梦源码是好的源码网站！！');
+INSERT INTO `dede_guestbook` VALUES('2','无标题','0','1','1400551831','符先生','329435595@qq.com','19366668888','329435595','','127.0.0.1','1400551523','1','<div class=\'rebox\'>dedemao.com织梦源码！！</div>\n<font color=\"red\">管理员回复：</font>dedemao.com织梦源码是好的源码网站！！');

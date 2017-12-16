@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("global","",236,264);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("field","",277,296);
+$z[1][4]['name']="title";
+$z[2]=Array("global","",297,323);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("field","",364,393);
+$z[3][4]['name']="keywords";
+$z[4]=Array("field","",433,491);
+$z[4][4]['name']="description";
+$z[4][4]['function']="html2text(@me)";
+$z[5]=Array("include","",1055,1090);
+$z[5][4]['filename']="head.htm";
+$z[6]=Array("field","",1224,1283);
+$z[6][4]['name']="typeid";
+$z[6][4]['function']="GetTopTypename(@me)";
+$z[7]=Array("channel","\r\n<li class=\"proOne\"><a href='[field:typeurl/]' title=\"[field:typename/]\">[field:typename/]</a></li>\r\n",1323,1573);
+$z[7][4]['type']="son";
+$z[7][4]['currentstyle']="<li class='proOne'><a href='~typelink~' title='~typename~' class='cur'>~typename~</a></li>";
+$z[8]=Array("type","\r\n<a href=\"[field:typeurl /]\" title=\"查看详细内容\"></a>\r\n",1640,1737);
+$z[8][4]['typeid']="7";
+$z[9]=Array("global","",1783,1804);
+$z[9][4]['name']="cfg_qq";
+$z[10]=Array("global","",1822,1844);
+$z[10][4]['name']="cfg_tel";
+$z[11]=Array("global","",1862,1885);
+$z[11][4]['name']="cfg_mail";
+$z[12]=Array("global","",1903,1925);
+$z[12][4]['name']="cfg_add";
+$z[13]=Array("field","",2025,2054);
+$z[13][4]['name']="typename";
+$z[14]=Array("field","",2105,2134);
+$z[14][4]['name']="position";
+$z[15]=Array("list","\r\n<li> \r\n<a href=\"[field:arcurl/]\" title=\"[field:title/]\" target=\"_blank\">\r\n<span class=\"fl\">[field:title/]</span>\r\n<span class=\"fr\">[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</span>\r\n</a> \r\n</li>\r\n",2200,2454);
+$z[15][4]['pagesize']="8";
+$z[15][4]['orderby']="id";
+$z[16]=Array("pagelist","",2542,2595);
+$z[16][4]['listitem']="index,end,pre,next,pageno";
+$z[17]=Array("include","",2635,2672);
+$z[17][4]['filename']="footer.htm";
+
+?>

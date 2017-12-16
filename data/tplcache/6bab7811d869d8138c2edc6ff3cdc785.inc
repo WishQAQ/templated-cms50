@@ -1,0 +1,1 @@
+<span class="fl">[field:typename /]</span> <a href="[field:typeurl /]" class="fr">更多 <font>>></font></a>

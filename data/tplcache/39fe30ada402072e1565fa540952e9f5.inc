@@ -1,0 +1,1 @@
+<a title="查看更多" href="[field:typeurl /]" class="l_newsmore">查看更多</a>

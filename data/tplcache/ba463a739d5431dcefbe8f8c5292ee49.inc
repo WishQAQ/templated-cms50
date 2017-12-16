@@ -1,0 +1,1 @@
+<span class="newsico">[field:typename /]<font>NEWS AND INFORMATION</font></span>

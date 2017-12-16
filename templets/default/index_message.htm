@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<LINK href="/dedemao/css/style.css"  rel="stylesheet" media="screen" type="text/css" />
+<script language="JavaScript" type="text/javascript" src="/dedemao/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/dedemao/js/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="/dedemao/js/jquery.jslides.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="/dedemao/js/DD_belatedPNG.js"></script><![endif]-->
+<script>
+  function check()
+  {
+	bxm=document.getElementById("bxm").value;
+	if(bxm=="")
+	{
+		alert("请输入姓名！")
+		return false;
+	}
+	
+	bsj=document.getElementById("bsj").value;
+	if(bsj=="")
+	{
+		alert("请输入手机号码！")
+		return false;
+	}
+	
+	byx=document.getElementById("byx").value;
+	if(byx=="")
+	{
+		alert("请输入邮箱地址！")
+		return false;
+	}
+	
+	bqq=document.getElementById("bqq").value;
+	if(bqq=="")
+	{
+		alert("请输入QQ号码！")
+		return false;
+	}
+	
+	bnr=document.getElementById("bnr").value;
+	if(bnr=="")
+	{
+		alert("请输入留言内容！")
+		return false;
+	}
+
+  }
+ 
+</script>
+
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+<!-- /header -->
+
+<div class="fyMain">
+<div class="fyLeft">
+<div class="l_news">
+<div class="rowtitle"> 
+{dede:type typeid='2'}
+<span class="newsico">[field:typename /]<font>NEWS AND INFORMATION</font></span>
+{/dede:type}
+</div>
+<ul class="pointer">
+{dede:arclist titlelen='40' row='5'  typeid='2'  orderby='pubdate'}
+<li><a href="[field:arcurl /]" title="[field:fulltitle /]">[field:title /]...</a> </li>
+{/dede:arclist}
+</ul>
+{dede:type typeid='2'}
+<a title="查看更多" href="[field:typeurl /]" class="l_newsmore">查看更多</a> 
+{/dede:type}
+</div>
+<div class="contact">
+<div class="contact_t">
+{dede:type typeid='7'}
+<a href="[field:typeurl /]" title="查看详细内容"></a>
+{/dede:type}
+</div>
+<div class="contactmain"> 
+
+Q Q：{dede:global.cfg_qq/} <br />
+电话：{dede:global.cfg_tel/} <br />
+邮箱：{dede:global.cfg_mail/} <br />
+地址：{dede:global.cfg_add/} <br />
+</div>
+</div>
+</div>
+<div class="fyRight">
+<div class="title">
+<div class="title_l">{dede:field name='typename'/}</div>
+<span class="titlefr">您当前的位置：{dede:field name='position'/}</span></div>
+<div class="mainRightMain">
+<div class="padding25">
+<div class='pb'>
+<div class='pagebox'>
+<ul class="ly">
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post" onSubmit="return check()">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+
+<li>您的姓名：<input name='bxm' id='bxm' type="text" class="k" /></li>
+<li>手机号码：<input name='bsj' id='bsj' type="text" class="k" /></li>
+<li>邮箱地址：<input name='byx' id='byx' type="text" class="k" /></li>
+<li>联系Q Q：<input name='bqq' id='bqq' type="text" class="k" /></li>
+<li>留言内容：<textarea name='bnr' id='bnr'></textarea></li>
+<input type="hidden" name="dede_fields" value="bxm,text;bsj,text;byx,text;bqq,text;bnr,multitext" />
+<input type="hidden" name="dede_fieldshash" value="a58926150098296d9518440a4c5dbf90" />
+<li><input type="submit" name="submit" class="t" /></li>
+</form>
+</ul>
+
+<div align='center'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

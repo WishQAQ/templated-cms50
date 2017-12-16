@@ -1,0 +1,1 @@
+<span class="newsico">荣誉证书<font>PRODUCT DISPLAY</font></span> <a title="查看更多" href="[field:typeurl /]" class="rmore">查看更多</a>

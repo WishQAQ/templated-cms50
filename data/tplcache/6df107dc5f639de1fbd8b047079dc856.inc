@@ -1,0 +1,1 @@
+<span class="newsico">[field:typename /]<font>NEWS AND INFORMATION</font></span> <a title="查看更多" href="[field:typeurl /]" class="rmore">查看更多</a>

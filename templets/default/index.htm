@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<LINK href="/dedemao/css/style.css"  rel="stylesheet" media="screen" type="text/css" />
+<script language="JavaScript" type="text/javascript" src="/dedemao/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/dedemao/js/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="/dedemao/js/jquery.jslides.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="/dedemao/js/DD_belatedPNG.js"></script><![endif]-->
+</head>
+
+<body>
+{dede:include filename="head.htm"/} 
+<!-- /header -->
+
+<div class="process">
+  <div class="main">
+    <div class="process_t"> {dede:type typeid='3'}<span class="fl">[field:typename /]</span> <a href="[field:typeurl /]" class="fr">更多 <font>>></font></a>{/dede:type} </div>
+    <div class="partFourM">
+      <div id="l"></div>
+      <div class="partFourCon" id="honormain">
+        <ul class="">
+          {dede:arclist titlelen='60' row='4'  typeid='3'  orderby='rand'}
+          <li> <a href="[field:arcurl /]" title="[field:fulltitle /]" class="proimg"> <img src="[field:litpic /]" width="400" height="300" alt="[field:fulltitle /]" /> </a> </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div id="r"></div>
+    </div>
+    <ul id="processli">
+      <li class="cur"><font>1</font><span class="fl">公司为用户提供包括咨询、工程设计、送货、安装施工以及
+        售后服务在内的专业化、高素质的全程的服务。</span></li>
+      <li><font>2</font><span class="fl">公司免费为用户提供工程设计和技术咨询。</span></li>
+      <li><font>3</font><span class="fl">将为用户提供专业化、高效率、高质量的工程施工设计和安装。</span></li>
+      <li><font>4</font><span class="fl">在系统交付用户使用后和上门服务后的24小时内，
+        公司会进行回访及跟踪服务。</span></li>
+      <li><font>5</font><span class="fl">公司为用户提供两年免费保修，终身维修。</span></li>
+    </ul>
+  </div>
+</div>
+<div class="case">
+  <div class="main">
+    <div class="title"> {dede:type typeid='3'}
+      <div class="title_l">[field:typename /]</div>
+      <a title="查看更多" href="[field:typeurl /]" class="ititle_r">查看更，<font>请点击这里</font></a> {/dede:type} </div>
+    <ul class="caseli">
+      {dede:arclist titlelen='60' row='3'  typeid='3'  orderby='pubdate'}
+      <li> <a class="detail pngFix" href="[field:arcurl /]" target="_blank"></a> <a href="[field:arcurl /]" class="proimg" target="_blank"> <img src="[field:litpic /]" width="290" height="215" class="PicAuto" alt="[field:fulltitle /]" />
+        <p class="proname">[field:title /]</p>
+        </a> </li>
+      {/dede:arclist}
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="newsarea">
+    <div class="news">
+      <div class="rowtitle"> {dede:type typeid='2'} <span class="newsico">[field:typename /]<font>NEWS AND INFORMATION</font></span> <a title="查看更多" href="[field:typeurl /]" class="rmore">查看更多</a> {/dede:type} </div>
+      <ul class="pointer">
+        {dede:arclist titlelen='60' row='5'  typeid='2'  orderby='pubdate'}
+        <li> <a href="[field:arcurl /]" title="[field:fulltitle /]"> <span class="fl">[field:title /]</span> <span class="fr">[field:pubdate function="GetDateMK(@me)"/]</span> </a> </li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="product">
+      <div class="rowtitle"> {dede:type typeid='4'} <span class="newsico">荣誉证书<font>PRODUCT DISPLAY</font></span> <a title="查看更多" href="[field:typeurl /]" class="rmore">查看更多</a> {/dede:type} </div>
+      <ul class="proli">
+        {dede:arclist titlelen='60' row='2'  typeid='4'  orderby='pubdate'}
+        <li> <a href="[field:arcurl /]" class=""> <img src="[field:litpic /]" width="213" height="160" class="PicAuto" alt="[field:fulltitle /]" />
+          <p class="proname pngFix">[field:title /]</p>
+          </a> </li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+  <div class="contactarea">
+    <div class="contact">
+      <div class="contact_t">{dede:type typeid='7'}<a href="[field:typeurl /]" title="查看详细内容"></a>{/dede:type}</div>
+      <div class="contactmain"> Q Q：{dede:global.cfg_qq/} <br />
+        电话：{dede:global.cfg_tel/} <br />
+        邮箱：{dede:global.cfg_mail/} <br />
+        地址：{dede:global.cfg_add/} </div>
+    </div>
+    <div class="about"> {dede:channelartlist  typeid='1,11111'}
+      <div class="title">
+        <div class="title_l">公司简介</div>
+        <a title="查看详细" href="{dede:field name='typeurl'/}" class="ititle_r">查看详细公司简介，<font>请点击这里</font></a> </div>
+      <a title="公司简介" href="{dede:field name='typeurl'/}" class="aboutimg"><img src="{dede:field.arcpic/}" alt=""/></a>
+      <div class="abouttxt">{dede:field.content   function='cn_substr(Html2Text(@me),480)'/}...</div>
+      {/dede:channelartlist} </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="foot_x">
+  <div class="f_link">
+    <div class="main"> <b>友情链接：</b> {dede:flink  }
+      [field:link /]
+      {/dede:flink}
+       </div>
+  </div>
+  <div class="main">
+    <div class="bottomnav"> <a title="网站首页" href="{dede:global.cfg_basehost/}">网站首页</a> {dede:channel type='top' } <a href="[field:typelink/]">[field:typename/]</a> {/dede:channel} </div>
+    <div class="bootTxt"> 地址：{dede:global.cfg_add/}&nbsp;&nbsp;&nbsp;&nbsp;
+      电话：{dede:global.cfg_tel/}&nbsp;&nbsp;&nbsp;&nbsp;
+      Q Q：{dede:global.cfg_qq/}<br />
+      版权所有：{dede:global.cfg_powerby/}&nbsp;&nbsp;&nbsp;&nbsp;技术支持：<a href="//zhanoo.com">站窝窝</a>&nbsp;&nbsp;&nbsp;&nbsp;ICP备案编号：<a href="http://www.miitbeian.gov.cn/" target="_blank">{dede:global.cfg_beian/}</a> </div>
+  </div>
+</div>
+</body>
+</html>
